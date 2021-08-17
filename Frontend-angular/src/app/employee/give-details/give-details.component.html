@@ -1,0 +1,31 @@
+<app-header-work></app-header-work>
+<section >
+    <br>
+
+    <div  class="col-xs-12 col-sm-6 col-md-4" style="margin-left: 11cm;">
+      <div style="margin: 4em 10em 14em 3em;">
+        <div class="card bg-muted text-dark" style="width:350px;  height: 420px;">
+          <img alt="" src="../../assets/images/getAllCustomers.png" style="height:200px">
+          <div class="card-body">
+            <h4 class="card-title">View the Customer</h4>
+            <form action="/viewCustomer" method="get">
+              User ID:<input type="text" name="userId" id="userId" placeholder="Enter the UserId" autocomplete="off"
+                ngModel #userId="ngModel" required style="margin: 10px;" />
+              <br> <br>
+              <div style="text-align: right;">
+                <input type="submit" name="View" value="View Customer" (click)="onDisplay(userId)"
+                  class="btn btn-primary" [disabled]="userId.invalid" />
+              </div>
+            </form>
+          </div>
+          <div style="text-align: left;">
+            <p class="message">{{viewCustomer}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+

@@ -1,0 +1,48 @@
+<app-header-work></app-header-work>
+<section>
+    <br>
+    <div class="container-ls row">
+    <div class="col-xs-12 col-sm-6 col-md-4" style="margin-left: 5.5cm;">
+  <div style="margin: 4em 0em 0em 3em;">
+    <div class="card bg-muted text-dark" style="width:350px; height: 420px;">
+      <img alt="" src="../../assets/images/deposit.jpg" style="height:200px">
+      <h4 class="card-title" style="color: blue; font-family: sans-serif;text-align: center;"> Deposit Amount</h4>
+      <form #f="ngForm">
+        <label>Account ID: </label>
+        <input type="number" name="accountId" placeholder="Enter the AccountId" autocomplete="off" required ngModel
+          #accountId="ngModel" />
+        <br>
+        <label>Amount: </label>
+        <input type="number" name="amount" placeholder="Enter the amount" autocomplete="off" required ngModel
+          #amount="ngModel" />
+        <br> <br>
+        <div style="text-align: right;">
+          <input type="submit" name="View" value="Deposit Amount" class="btn btn-primary" (click)="onDeposit(f)"
+            style="margin-right: 10px;" [disabled]="accountId.invalid && amount.invalid" />
+        </div>
+      </form>
+      <p class="message">{{depositmsg}}</p>
+      <br>
+    </div>
+  </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-4">
+  <div style="margin: 4em 10em 14em 3em;">
+    <div class="card bg-muted text-dark" style="width:350px; height: 420px;">
+      <img alt="" src="../../assets/images/trans1.png" style="height:200px">
+      <div class="card-body">
+        <h4 class="card-title">Service Charge Deduction</h4>
+        <p class="card-text">Charges will be deducted for not maintaining minimum balance </p>
+        <form action="/deductServiceTax" method="post">
+          <br>
+          <div style="text-align: right;">
+            <input type="submit" name="View" value="Deduct" class="btn btn-primary" (click)="onServiceCharge()" />
+          </div>
+        </form>
+        <p class="message">{{servicemsg}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>

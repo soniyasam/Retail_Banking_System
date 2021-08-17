@@ -1,0 +1,34 @@
+<app-header-cust></app-header-cust>
+<section>
+  <br>
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div style="margin: 10em 0em 10em 10em;">
+      <div class="card bg-dark text-white" style="width: 500px; background-color: #f3d8d8">
+        <img alt="" class="card-img-top" src="../../assets/images/trans1.png" style="height:200px">
+        <div class="card-body">
+          <h4 class="card-title">Transfer Amount</h4>
+          <form #value="ngForm">
+            <label>From Account: </label>
+            <select id="accountid" name="accountid" [ngModel]="accountid" #accountid="ngModel">
+              <option *ngFor="let account of customerValue.accounts"> {{account.accountId}} </option>
+            </select>
+            <br>
+            <label>Enter the Target Account No: </label>
+            <input type="number" name="targetAccount" placeholder="Enter the Target Account ID" ngModel
+              #targetAccount="ngModel" />
+
+            <br>
+            <label>Enter the Amount to Transfer: </label>
+            <input type="number" name="amount" placeholder="Enter the amount" min="100" ngModel #amount="ngModel" />
+            <input type="hidden" name="reference" value="transfer" />
+            <br> <button type="button" (click)="onTransfer(value)" name="View" class="btn btn-primary"
+              [disabled]="!value.valid">Transfer Amount</button>
+          </form>
+          <div *ngIf="transfermsg">
+            <p class="text-white" id="message">{{transfermsg}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

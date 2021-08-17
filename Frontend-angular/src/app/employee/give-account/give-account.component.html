@@ -1,0 +1,26 @@
+<app-header-work></app-header-work>
+<section>
+    <br>
+    <div class="col-xs-12 col-sm-6 col-md-4" style="margin-left: 11cm;">
+      <div style="margin: 5em 10em 2em 3em;">
+        <div class="card bg-muted text-dark" style="width:350px; height: 420px;">
+          <img alt="" src="../../assets/images/createaccount.jpeg" style="height:200px">
+          <div class="card-body">
+            <h5 class="card-title">Create Account for Customer</h5>
+            <form>
+              Customer ID:<input type="text" name="id" placeholder="Enter the CustomerId" autocomplete="off" ngModel
+                #id="ngModel" style="margin: 10px;" required />
+              <br>
+              <br>
+              <div style="text-align: right;">
+                <input type="submit" name="View" value="Create Account" class="btn btn-primary"
+                  (click)="createAccount(id)" [disabled]="id.invalid" />
+              </div>
+            </form>
+            <p class="message">{{Accounterror}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+

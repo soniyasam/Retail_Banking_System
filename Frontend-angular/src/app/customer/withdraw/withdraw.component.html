@@ -1,0 +1,31 @@
+<app-header-cust></app-header-cust>
+<section>
+  <br>
+
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div style="margin: 10em 0em 0em 0em;">
+      <div class="card bg-dark text-white" style="width: 500px; background-color: #f3d8d8">
+        <img alt="" class="card-img-top" src="../../assets/images/withdraw.jpg" style="height:200px">
+        <div class="card-body">
+          <h4 class="card-title">Withdraw Amount</h4>
+          <form #details="ngForm">
+            <label>From Account:</label>
+            <select id="aId" name="aId" [ngModel]="aId" #acctId="ngModel">
+              <option *ngFor="let account of customerValue.accounts"> {{account.accountId}} </option>
+            </select>
+            <label></label><br>
+            <label>Enter the Amount to Withdraw:</label>
+            <input type="number" name="amount" placeholder="Enter the amount" min="100" ngModel #amount="ngModel" />
+            <input type="hidden" name="reference" value="withdraw" />
+            <br> <br> <button type="submit" name="View" class="btn btn-primary" (click)="onWithdraw(details)">Withdraw
+              Amount</button>
+            <div *ngIf="withdrawmsg">
+              <p class="text-white" id="message">{{withdrawmsg}}</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</section>
