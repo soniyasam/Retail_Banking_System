@@ -2,9 +2,8 @@
 
 Project Overview: 
 -----------------
-The Retail bank requires high availability for their operations to be available to their clients & bank employees without disruption. So it is required to provide a Micro-Service Architecture based software solution.
 
-Retail Banking System helps to register a customer and create an account with the help of employee. Customer can perform withdrawal, deposit, transfer amount and can view the transaction details within the retail bank.
+Retail Banking System provides a 'Micro-Service Architecture based software solution' that helps employees to register customers and, create and manage the accounts of those customers. We also provide Customers the access to perform withdrawal, deposit, transactions and also view the transaction details.
 
 ### Steps to install the project files
 
@@ -35,7 +34,7 @@ Functionalities
 -----------------
 ## 1. Authentication Microservice:
 
- Authentication Module is a Microservice that performs the following operations:
+ Authentication Microservice performs the following operations:
  - Login
  - Logout 
  
@@ -61,7 +60,7 @@ Functionalities
 
 ## 2. Customer Microservice:
 
-Customer Module is a Microservice that performs the following operations: 
+Customer Microservice performs the following operations: 
 
 - Create Customer 
 
@@ -92,10 +91,8 @@ b) Dispaying customer’s profile:
 
 ## 3. Account Microservice:
 
-Account mnagement Module is a Microservice that performs following operations: 
-
-- Get Customer Account(s) 
-
+Account Microservice performs following operations: 
+ 
 - Create Account 
 
 - Get Account Statement 
@@ -164,7 +161,7 @@ e) Account statement of a customer account
 
 ## 4.Transaction Microservice:
 
-Transactions Module is a Microservice that performs the following operations: 
+Transactions Microservice performs the following operations: 
 
 - Deposit 
 
@@ -172,12 +169,12 @@ Transactions Module is a Microservice that performs the following operations:
 
 - Transfer 
 
-- Get Transactions 
+- Get Transactions details/History
 
 
 ## 5. Rules Microservice:
 
-The rules module is a microservice that will be responsible for evaluating rules while performing transactions like withdrawals, deposits. It will also return values based on the rules eg Minimum Account Balance, Service Charges for accounts that are not maintaining the minimum balance.
+The rules microservice is responsible for evaluating rules while performing transactions like withdrawals, deposits. It will also return values based on the rules eg Minimum Account Balance, Service Charges for accounts that are not maintaining the minimum balance.
 
 The following operations are performed in this module
 
@@ -198,9 +195,11 @@ The angular user interface loads the web application and takes care of user sess
  
 |TeamMembers|Module Worked On|
 |--|--|
-|Bavani S | Account Service|
-| Harish K|Rules Service |
-| Mehul Kumar | Authentication Service |
-|Vemula Chandana | Transaction Service  |
-| Yash Gupta | Customer Service |
+| Hitesh Garg | Authentication Service |
+| Soniya Mary Sam | Customer Service |
+| Rajeshwar | Account Service|
+| Chinni Sai Trimuthulum | Transaction Service  |
+| Akash A |Rules Service |
+
+
 
