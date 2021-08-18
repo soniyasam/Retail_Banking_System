@@ -3,7 +3,7 @@
 Project Overview: 
 -----------------
 
-Retail Banking System provides a 'Micro-Service Architecture based software solution' that helps employees to register customers and, create and manage the accounts of those customers. We also provide Customers the access to perform withdrawal, deposit, transactions and also view the transaction details.
+Retail Banking System provides a 'Micro-Service Architecture based software solution' that helps employees to register customers and, create and manage the accounts of those customers. We also provide Customers the access to perform transactions like withdrawa and deposit, and also view the transaction details.
 
 ### Steps to install the project files
 
