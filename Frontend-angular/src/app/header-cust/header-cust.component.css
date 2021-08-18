@@ -1,0 +1,11 @@
+h2{
+    color: rgb(191, 231, 250);
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 0%;
+}
+a.logo{
+    margin-left: 40px;
+    margin-right: 0px;
+    padding: auto;
+}

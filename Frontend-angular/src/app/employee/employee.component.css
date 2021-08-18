@@ -11,3 +11,7 @@ a.disabled {
     color: orange;
     margin-left: 10px;
  }
+ h1{
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

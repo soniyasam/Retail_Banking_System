@@ -1,14 +1,16 @@
 <div class="sticky-top bg-info d-flex align-content-center">
+  <a class="logo navbar-brand" href="/">
+    <img src="favicon.ico" alt="..." height="50">
+  </a>
   <a href="/" class="active nav-link text-white">
-
-    <h1><img alt="" height=36 width=36 src="/src/favicon.ico"><i>CTS Bank</i></h1>
+    <h2><i>CTS Bank</i></h2>
   </a>
   <ul class="align-content-center container nav nav-pills justify-content-end">
     <!-- <li style="color: aliceblue;font: 300;"><a routerLink="/withdraw" style="color: aliceblue;font-family: sans-serif;font-weight: bold;">withdraw</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
     <li style="color: aliceblue;font: 300;"><a routerLink="/transact" style="color: aliceblue;font-family: sans-serif;font-weight: bold;">transact
       </a></li>&nbsp;&nbsp;&nbsp;&nbsp; -->
-    <li class="nav-item"><a class="nav-link active" routerLink="/customerdashboard" class="btn btn-outline-light"
-        style="margin-right: 15px;" *ngIf="!val">Home
+    <li class="nav-item"><a class="nav-link active" routerLink="/customerdashboard"
+        class="btn btn-outline-light bg-danger" style="margin-right: 15px;" *ngIf="!val">Home
       </a>
     </li>
     <li class="nav-item"><a class="btn btn-outline-light bg-danger" routerLink="/" (click)="onLogout()">Logout

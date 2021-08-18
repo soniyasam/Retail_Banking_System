@@ -1,18 +1,33 @@
 <div class="sticky-top bg-info  d-flex align-content-center">
+  <a class="logo navbar-brand" href="/">
+    <img src="favicon.ico" alt="..." height="50">
+  </a>
   <a href="/" class="active nav-link text-white">
-    <h1><img alt="" style="height: 1cm;width: 1cm;" src="/src/assets/images/new.jpg"><i>CTS Bank</i></h1>
+    <h2><i>CTS Bank</i></h2>
   </a>
   <ul class="align-content-center container nav nav-pills justify-content-end">
-    <li style="color: aliceblue;font: 300;"><a routerLink="/createCustomer" style="color: aliceblue;font-family: sans-serif;font-weight: bold;">customer<br>creation</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-    <li style="color: aliceblue;font: 300;"><a routerLink="/giveaccount" style="color: aliceblue;font-family: sans-serif;font-weight: bold;">account
-      <br>creation</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-    <li style="color: aliceblue;font: 300;"><a routerLink="/givedetails" style="color: aliceblue;font-family: sans-serif;font-weight: bold;">view details</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
-    <li style="color: aliceblue;font: 300;"><a routerLink="/transaction" style="color: aliceblue;font-family: sans-serif;font-weight: bold;">deposit</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <li class="nav-item"><a class="nav-link active" routerLink="/employeedashboard" class="btn btn-outline-light"
-        style="margin-right: 15px;" *ngIf="!val">Home
+    <li style="color: aliceblue;font: 300;">
+      <a class="btn btn-outline-light" routerLink="/createCustomer">Customer creation</a>
+    </li>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <li style="color: aliceblue;font: 300;">
+      <a class="btn btn-outline-light" routerLink="/giveaccount">Account creation</a>
+    </li>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <li style="color: aliceblue;font: 300;">
+      <a class="btn btn-outline-light" routerLink="/givedetails">View details</a>
+    </li>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <li>
+      <a class="btn btn-outline-light" routerLink="/transaction">Deposit</a>
+    </li>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <li class="nav-item"><a class="nav-link active" routerLink="/employeedashboard"
+        class="btn btn-outline-light bg-danger" style="margin-right: 15px;" *ngIf="!val">Home
       </a>
     </li>
-    <li class="nav-item"><a class="nav-link active" class="btn btn-outline-light" routerLink="/" *ngIf="val">Logout
+    <li class="nav-item"><a class="nav-link active" class="btn btn-outline-light bg-danger" routerLink="/"
+        *ngIf="val">Logout
       </a>
     </li>
   </ul>

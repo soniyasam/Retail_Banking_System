@@ -1,6 +1,6 @@
 <app-header-cust></app-header-cust>
 <div style="text-align: center;">
-  <h1><i>Welcome to The Cts Bank</i></h1>
+  <h1><i>Welcome to CTS Bank</i></h1>
 </div>
 
 <br>
@@ -56,7 +56,8 @@
         <option *ngFor="let account of customerValue.accounts">{{account.accountId}}
         </option>
       </select>
-      <button class="btn btn-warning" type="button" (click)="onDisplay()" style="margin:5px;"> Submit </button>
+      <button class="btn btn-warning" type="button" (click)="onDisplay()" style="margin:5px;"> Submit
+      </button>
     </div>
   </form>
   <div class="container" *ngIf="display">
@@ -86,7 +87,7 @@
 
   <div class="col-xs-12 col-sm-6 col-md-4">
     <div style="margin: 10em 0em 0em 0em;">
-      <div class="card bg-muted text-dark" style="width: 500px;" >
+      <div class="card bg-muted text-dark" style="width: 500px;">
         <img alt="" class="card-img-top" src="../../assets/images/withdraw.jpg" style="height:200px">
         <div class="card-body">
           <h4 class="card-title">Withdraw Amount</h4>
@@ -143,4 +144,3 @@
   </div>
 
 </div>
-
